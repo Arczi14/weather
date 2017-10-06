@@ -10,7 +10,7 @@ class Search extends React.Component {
         return <div className="search">
         Tutaj wpisz miejscowość:
             <input type="text" value={this.props.value} onChange={this.props.onChange}/>
-            <Button check={this.props.check}/>
+            <Button onClick={this.props.onClick}/>
             </div>
       }
   }

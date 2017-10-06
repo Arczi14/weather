@@ -69,11 +69,6 @@ class Page extends React.Component {
     handleClick = (event) => {
         event.preventDefault();
 
-        if(this.state.error === true) {
-            this.setState({
-                error: false
-            })
-        }
         let urlInput = `https://api.apixu.com/v1/current.json?key=7aeed42ae9eb4f47bc8185433170310&q=${this.state.name}`
         this.setState({
             inputValue: this.state.name,
@@ -85,28 +80,27 @@ class Page extends React.Component {
             const wind = response.current.wind_kph
             const clouds = response.current.cloud
             const preasure = response.current.pressure_mb
-            console.log("test")
 
             this.setState({
                 city: city,
                 temp: temp,
                 wind: wind,
                 clouds: clouds,
-                preasure: preasure
+                preasure: preasure,
+                error: false,
             })
         })
         .catch((err) => {
             this.setState({
                 error: true
             })
-            console.log("err", err)
         });
     };
 
     render() {
         if (this.state.error) {
             return <div className="wrap_all" style={{backgroundImage: 'url(../img/spring.jpg)'}} >
-                <Search onChange={this.handleChange} value={this.state.name} check={this.handleClick}/>
+                <Search onChange={this.handleChange} value={this.state.name} onClick={this.handleClick}/>
                 <div className="box">
                     <NotFound />
                     <GeoLocBtn findMe={this.geolocClick}/>
@@ -114,7 +108,7 @@ class Page extends React.Component {
             </div>
         }else if(this.state.temp == 0) {
             return <div className="wrap_all" style={{backgroundImage: 'url(../img/spring.jpg)'}}>
-                <Search onChange={this.handleChange} value={this.state.name} check={this.handleClick}/>
+                <Search onChange={this.handleChange} value={this.state.name} onClick={this.handleClick}/>
                 <div className="box">
                     <StartPage />
                     <GeoLocBtn findMe={this.geolocClick}/>
@@ -122,12 +116,12 @@ class Page extends React.Component {
             </div>
         } else if(this.state.clouds < 20) {
             return <div className="wrap_all" style={{backgroundImage: 'url(../img/clear.jpg)'}} >
-            <Search onChange={this.handleChange} value={this.state.name} check={this.handleClick}/>
+            <Search onChange={this.handleChange} value={this.state.name} onClick={this.handleClick}/>
             <Content city={this.state.city} preasure={this.state.preasure} temp={this.state.temp} clouds={this.state.clouds} wind={this.state.wind}/>
             </div>
         } else if ((this.state.clouds > 21)&&(this.state.clouds < 40)) {
             return <div className="wrap_all" style={{backgroundImage: 'url(../img/little.jpg)'}} >
-            <Search onChange={this.handleChange} value={this.state.name} check={this.handleClick}/>
+            <Search onChange={this.handleChange} value={this.state.name} onClick={this.handleClick}/>
             <Content city={this.state.city} preasure={this.state.preasure} temp={this.state.temp} clouds={this.state.clouds} wind={this.state.wind}/>
             </div>
         } else if ((this.state.clouds > 41)&&(this.state.clouds < 60)) {
@@ -138,12 +132,12 @@ class Page extends React.Component {
 
         } else if ((this.state.clouds > 61)&&(this.state.clouds < 80)) {
             return <div className="wrap_all" style={{backgroundImage: 'url(../img/strong.jpg)'}} >
-            <Search onChange={this.handleChange} value={this.state.name} check={this.handleClick}/>
+            <Search onChange={this.handleChange} value={this.state.name} onClick={this.handleClick}/>
             <Content city={this.state.city} preasure={this.state.preasure} temp={this.state.temp} clouds={this.state.clouds} wind={this.state.wind}/>
             </div>
         } else if (this.state.clouds > 81) {
             return <div className="wrap_all" style={{backgroundImage: 'url(../img/dark-clouds.jpg)'}} >
-            <Search onChange={this.handleChange} value={this.state.name} check={this.handleClick}/>
+            <Search onChange={this.handleChange} value={this.state.name} onClick={this.handleClick}/>
             <Content city={this.state.city} preasure={this.state.preasure} temp={this.state.temp} clouds={this.state.clouds} wind={this.state.wind}/>
             </div>
         } else {
