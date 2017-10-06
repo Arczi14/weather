@@ -99,7 +99,7 @@ class Page extends React.Component {
 
     render() {
         if (this.state.error) {
-            return <div className="wrap_all" style={{backgroundImage: 'url(./img/spring.jpg)'}} >
+            return <div className="wrap_all" style={{backgroundImage: 'url(./../img/spring.jpg)'}} >
                 <Search onChange={this.handleChange} value={this.state.name} onClick={this.handleClick}/>
                 <div className="box">
                     <NotFound />
@@ -107,7 +107,7 @@ class Page extends React.Component {
                 </div>
             </div>
         }else if(this.state.temp == 0) {
-            return <div className="wrap_all" style={{backgroundImage: 'url(./img/spring.jpg)'}}>
+            return <div className="wrap_all" style={{backgroundImage: 'url(./../img/spring.jpg)'}}>
                 <Search onChange={this.handleChange} value={this.state.name} onClick={this.handleClick}/>
                 <div className="box">
                     <StartPage />
@@ -115,28 +115,28 @@ class Page extends React.Component {
                 </div>
             </div>
         } else if(this.state.clouds < 20) {
-            return <div className="wrap_all" style={{backgroundImage: 'url(./img/clear.jpg)'}} >
+            return <div className="wrap_all" style={{backgroundImage: 'url(./../img/clear.jpg)'}} >
             <Search onChange={this.handleChange} value={this.state.name} onClick={this.handleClick}/>
             <Content city={this.state.city} preasure={this.state.preasure} temp={this.state.temp} clouds={this.state.clouds} wind={this.state.wind}/>
             </div>
         } else if ((this.state.clouds > 21)&&(this.state.clouds < 40)) {
-            return <div className="wrap_all" style={{backgroundImage: 'url(./img/little.jpg)'}} >
+            return <div className="wrap_all" style={{backgroundImage: 'url(./../img/little.jpg)'}} >
             <Search onChange={this.handleChange} value={this.state.name} onClick={this.handleClick}/>
             <Content city={this.state.city} preasure={this.state.preasure} temp={this.state.temp} clouds={this.state.clouds} wind={this.state.wind}/>
             </div>
         } else if ((this.state.clouds > 41)&&(this.state.clouds < 60)) {
-            return <div className="wrap_all" style={{backgroundImage: 'url(./img/strong-clouds.jpg)'}} >
+            return <div className="wrap_all" style={{backgroundImage: 'url(./../img/strong-clouds.jpg)'}} >
             <Search onChange={this.handleChange} value={this.state.name} onClick={this.handleClick}/>
             <Content city={this.state.city} preasure={this.state.preasure} temp={this.state.temp} clouds={this.state.clouds} wind={this.state.wind}/>
             </div>
 
         } else if ((this.state.clouds > 61)&&(this.state.clouds < 80)) {
-            return <div className="wrap_all" style={{backgroundImage: 'url(./img/strong.jpg)'}} >
+            return <div className="wrap_all" style={{backgroundImage: 'url(./../img/strong.jpg)'}} >
             <Search onChange={this.handleChange} value={this.state.name} onClick={this.handleClick}/>
             <Content city={this.state.city} preasure={this.state.preasure} temp={this.state.temp} clouds={this.state.clouds} wind={this.state.wind}/>
             </div>
         } else if (this.state.clouds > 81) {
-            return <div className="wrap_all" style={{backgroundImage: 'url(./img/dark-clouds.jpg)'}} >
+            return <div className="wrap_all" style={{backgroundImage: 'url(./../img/dark-clouds.jpg)'}} >
             <Search onChange={this.handleChange} value={this.state.name} onClick={this.handleClick}/>
             <Content city={this.state.city} preasure={this.state.preasure} temp={this.state.temp} clouds={this.state.clouds} wind={this.state.wind}/>
             </div>
