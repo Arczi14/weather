@@ -10004,7 +10004,7 @@ var Page = function (_React$Component) {
             if (this.state.error) {
                 return _react2.default.createElement(
                     'div',
-                    { className: 'wrap_all', style: { backgroundImage: 'url(./../img/spring.jpg)' } },
+                    { className: 'wrap_all', style: { backgroundImage: 'url(../img/spring.jpg)' } },
                     _react2.default.createElement(_search.Search, { onChange: this.handleChange, value: this.state.name, onClick: this.handleClick }),
                     _react2.default.createElement(
                         'div',
@@ -10016,7 +10016,7 @@ var Page = function (_React$Component) {
             } else if (this.state.temp == 0) {
                 return _react2.default.createElement(
                     'div',
-                    { className: 'wrap_all', style: { backgroundImage: 'url(./../img/spring.jpg)' } },
+                    { className: 'wrap_all', style: { backgroundImage: 'url(../img/spring.jpg)' } },
                     _react2.default.createElement(_search.Search, { onChange: this.handleChange, value: this.state.name, onClick: this.handleClick }),
                     _react2.default.createElement(
                         'div',
@@ -10028,35 +10028,35 @@ var Page = function (_React$Component) {
             } else if (this.state.clouds < 20) {
                 return _react2.default.createElement(
                     'div',
-                    { className: 'wrap_all', style: { backgroundImage: 'url(./../img/clear.jpg)' } },
+                    { className: 'wrap_all', style: { backgroundImage: 'url(../img/clear.jpg)' } },
                     _react2.default.createElement(_search.Search, { onChange: this.handleChange, value: this.state.name, onClick: this.handleClick }),
                     _react2.default.createElement(_content.Content, { city: this.state.city, preasure: this.state.preasure, temp: this.state.temp, clouds: this.state.clouds, wind: this.state.wind })
                 );
             } else if (this.state.clouds > 21 && this.state.clouds < 40) {
                 return _react2.default.createElement(
                     'div',
-                    { className: 'wrap_all', style: { backgroundImage: 'url(./../img/little.jpg)' } },
+                    { className: 'wrap_all', style: { backgroundImage: 'url(../img/little.jpg)' } },
                     _react2.default.createElement(_search.Search, { onChange: this.handleChange, value: this.state.name, onClick: this.handleClick }),
                     _react2.default.createElement(_content.Content, { city: this.state.city, preasure: this.state.preasure, temp: this.state.temp, clouds: this.state.clouds, wind: this.state.wind })
                 );
             } else if (this.state.clouds > 41 && this.state.clouds < 60) {
                 return _react2.default.createElement(
                     'div',
-                    { className: 'wrap_all', style: { backgroundImage: 'url(./../img/strong-clouds.jpg)' } },
+                    { className: 'wrap_all', style: { backgroundImage: 'url(../img/strong-clouds.jpg)' } },
                     _react2.default.createElement(_search.Search, { onChange: this.handleChange, value: this.state.name, onClick: this.handleClick }),
                     _react2.default.createElement(_content.Content, { city: this.state.city, preasure: this.state.preasure, temp: this.state.temp, clouds: this.state.clouds, wind: this.state.wind })
                 );
             } else if (this.state.clouds > 61 && this.state.clouds < 80) {
                 return _react2.default.createElement(
                     'div',
-                    { className: 'wrap_all', style: { backgroundImage: 'url(./../img/strong.jpg)' } },
+                    { className: 'wrap_all', style: { backgroundImage: 'url(../img/strong.jpg)' } },
                     _react2.default.createElement(_search.Search, { onChange: this.handleChange, value: this.state.name, onClick: this.handleClick }),
                     _react2.default.createElement(_content.Content, { city: this.state.city, preasure: this.state.preasure, temp: this.state.temp, clouds: this.state.clouds, wind: this.state.wind })
                 );
             } else if (this.state.clouds > 81) {
                 return _react2.default.createElement(
                     'div',
-                    { className: 'wrap_all', style: { backgroundImage: 'url(./../img/dark-clouds.jpg)' } },
+                    { className: 'wrap_all', style: { backgroundImage: 'url(../img/dark-clouds.jpg)' } },
                     _react2.default.createElement(_search.Search, { onChange: this.handleChange, value: this.state.name, onClick: this.handleClick }),
                     _react2.default.createElement(_content.Content, { city: this.state.city, preasure: this.state.preasure, temp: this.state.temp, clouds: this.state.clouds, wind: this.state.wind })
                 );
