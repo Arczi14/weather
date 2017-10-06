@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap_all {
+  height: 100vh;
+  background-image: url("../img/spring1.jpeg");
+  background-size: cover;
+}
+
+.wrap_all .box {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.wrap_all .box .startPage {
+  padding-top: 10%;
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.wrap_all .box .startPage .startText {
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.wrap_all .box .geoBtn {
+  border: 0;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 1.2rem;
+  background-color: #4173B6;
+  color: #fff;
+}
+
+.wrap_all .box .geoBtn:hover {
+  background-color: #6181FF;
+}
+
+.search {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  padding: 20px 30px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.search .mainBtn, .search input[type="text"] {
+  border-radius: 5px;
+  margin-left: 5px;
+  border: 0;
+}
+
+.search input[type="text"] {
+  padding-left: 4px;
+  border: 1px solid black;
+}
+
+.search .mainBtn {
+  background-color: #DBDBDB;
+}
+
+.search .mainBtn:hover {
+  background-color: #B6B6B6;
+}
+
+.content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  text-align: center;
+  padding: 0 5px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.content .results .info, .content .results .result {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.content .results .result {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main.css.map */
