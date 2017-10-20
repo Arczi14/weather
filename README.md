@@ -76,4 +76,4 @@ In the weather app is buttton with geolocation but he does not work enough good.
 ## Author:
 Arkadiusz Ścibior
 
-Created: 25.08.2017
+Created: 03.10.2017
