@@ -19,7 +19,7 @@ Jest to projekt końcowy, który musiałem wykonać podczas kursu **CodersLab**.
 
 ```
 -przejdź do konsoli
--wykonaj klon danego projektu na komputer (https://github.com/ArekScibior/weather.git)
+-wykonaj klon danego projektu na komputer (git clone https://github.com/ArekScibior/weather.git)
 -wejdź do folderu z projektem (cd weather)
 -zainstaluj potrzebne pakiety (npm install / npm i)
 -uruchom webpacka (npm start)
@@ -58,7 +58,7 @@ Data tworzenia projektu: 03.10.2017
 
 ```
 -run console
--make a clone (https://github.com/ArekScibior/weather.git)
+-make a clone (git clone https://github.com/ArekScibior/weather.git)
 -enter to the clone folder (cd weather)
 -install packages (npm install / npm i)
 -run webpack (npm start)
