@@ -70,7 +70,7 @@ Data tworzenia projektu: 03.10.2017
 In the weather app is buttton with geolocation but he does not work enough good. I must fix the button and add footer.
 
 
-## View the projekt online: https://arekscibior.github.io/weather/
+## View the project online: https://arekscibior.github.io/weather/
 
 
 ## Author:
