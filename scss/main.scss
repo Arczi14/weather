@@ -30,7 +30,7 @@ body {
         }
         .geoBtn {
             border: 0;
-            border-radius: 10px;
+            // border-radius: 10px;
             padding: 14px;
             font-size: 1.2rem;
             background-color: #4173B6;
@@ -52,19 +52,18 @@ body {
     font-weight: bold;
 
     .mainBtn, input[type="text"] {
-        border-radius: 5px;
         margin-left: 5px;
         border: 0;
+        padding: 0 10px;
     }
     input[type="text"] {
         padding-left: 4px;
         border: 1px solid black;
     }
     .mainBtn {
-        background-color: #DBDBDB;
-        &:hover{
-            background-color: #B6B6B6;
-        }
+        color: #fff;
+        background-color: #5bc0de;
+        border-color: #46b8da;
     }
 }
 

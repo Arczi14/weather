@@ -11,26 +11,18 @@ body {
 }
 
 .wrap_all .box {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .wrap_all .box .startPage {
   padding-top: 10%;
   text-align: center;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrap_all .box .startPage .startText {
@@ -41,7 +33,6 @@ body {
 
 .wrap_all .box .geoBtn {
   border: 0;
-  border-radius: 10px;
   padding: 14px;
   font-size: 1.2rem;
   background-color: #4173B6;
@@ -53,10 +44,8 @@ body {
 }
 
 .search {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   padding: 20px 30px;
   color: #fff;
   font-size: 1.3rem;
@@ -64,9 +53,9 @@ body {
 }
 
 .search .mainBtn, .search input[type="text"] {
-  border-radius: 5px;
   margin-left: 5px;
   border: 0;
+  padding: 0 10px;
 }
 
 .search input[type="text"] {
@@ -75,23 +64,16 @@ body {
 }
 
 .search .mainBtn {
-  background-color: #DBDBDB;
-}
-
-.search .mainBtn:hover {
-  background-color: #B6B6B6;
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
 }
 
 .content {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   padding: 0 5px;
   font-size: 2rem;
