@@ -129,7 +129,7 @@ class Page extends React.Component {
             <Content city={this.state.city} preasure={this.state.preasure} temp={this.state.temp} clouds={this.state.clouds} wind={this.state.wind}/>
             </div>
         } else {
-            return null;
+            return undefined;
         }
     }
 }
